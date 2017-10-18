@@ -1,0 +1,88 @@
+{
+  results: [
+    {
+      address_components: [
+        {
+          long_name: "14853",
+          short_name: "14853",
+          types: [
+            "postal_code"
+          ]
+        },
+        {
+          long_name: "Ithaca",
+          short_name: "Ithaca",
+          types: [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          long_name: "Tompkins County",
+          short_name: "Tompkins County",
+          types: [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          long_name: "New York",
+          short_name: "NY",
+          types: [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          long_name: "United States",
+          short_name: "US",
+          types: [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      formatted_address: "Ithaca, NY 14853, USA",
+      geometry: {
+        bounds: {
+          northeast: {
+            lat: 42.451277,
+            lng: -76.46578079999999
+          },
+          southwest: {
+            lat: 42.4429429,
+            lng: -76.4892789
+          }
+        },
+        location: {
+          lat: 42.4467049,
+          lng: -76.48305789999999
+        },
+        location_type: "APPROXIMATE",
+        viewport: {
+          northeast: {
+            lat: 42.451277,
+            lng: -76.46578079999999
+          },
+          southwest: {
+            lat: 42.4429429,
+            lng: -76.4892789
+          }
+        }
+      },
+      place_id: "ChIJYWuHufSB0IkRnGZJmtPxpo8",
+      types: [
+        "postal_code"
+      ]
+    }
+  ],
+  status: "OK"
+}
+
+
+Example data
+GET: https://maps.googleapis.com/maps/api/geocode/json?address=14853
+ithaca.results[0].address_components[1].long_name; => "Ithaca"
+ithaca.results[0].geometry.location => Object {lat: 42.4467049, lng: -76.48305789999999}
+ithaca.results[0].geometry.location.lat => 42.4467049
+ithaca.results[0].geometry.location.lng => -76.48305789999999*/

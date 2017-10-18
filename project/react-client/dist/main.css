@@ -1,0 +1,43 @@
+h1 {
+  color: #3D9970;
+  font-family: Verdana;
+  text-shadow: 2px 2px #191970;
+}
+
+#search-bar {
+  color: white;
+  background-color: #6495ED;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+div #list-item {
+  border: 1px solid #191970;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+div #list-view {
+  border: 1px solid #3D9970;
+  border-radius: 5px;
+  margin: 5px;
+
+  min-width: 450px;
+  max-width: 450px;
+  min-height: 450px;
+  max-height: 450px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 10 auto;
+
+  padding: 10px;
+}
+
+#list-item-name {
+  font-weight: bold;
+}
+
+#list-item-rating {
+  float: right;
+  margin-right: 3px;
+}
